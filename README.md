@@ -1,54 +1,64 @@
-# React + TypeScript + Vite
+# 📌 Controle de Gastos  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao **Controle de Gastos**, uma aplicação interativa e dinâmica para te ajudar a gerenciar suas finanças de forma eficiente!  
 
-Currently, two official plugins are available:
+## 🚀 Sobre o Projeto  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **Controle de Gastos** é uma plataforma desenvolvida para facilitar o acompanhamento de despesas e receitas, permitindo uma visão clara dos seus gastos e ajudando na tomada de decisões financeiras. Com uma interface moderna e intuitiva, o usuário pode adicionar, editar e remover transações em tempo real.  
 
-## Expanding the ESLint configuration
+## 🎯 Funcionalidades  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+✅ Cadastro de despesas e receitas  
+✅ Visualização dinâmica do saldo disponível  
+✅ Filtros para melhor organização dos gastos  
+✅ Gráficos interativos para análise financeira  
+✅ Integração com um backend simples via JSON Server  
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Tecnologias Utilizadas  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- **React** - Biblioteca para construção de interfaces modernas e performáticas  
+- **TypeScript** - Superset do JavaScript que adiciona tipagem estática  
+- **Styled Components** - Biblioteca para estilização baseada em componentes  
+- **JSON Server** - API simulada para persistência dos dados  
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## 🔧 Como Executar o Projeto  
+
+### 1️⃣ Clone o repositório  
+```bash
+git clone https://github.com/seu-usuario/controle-de-gastos.git
+
+### 2️⃣ Acesse a pasta do projeto
+```bash 
+cd nome-projeto 
+
+### 3️⃣ Instale as dependências
+```bash 
+npm install
+
+### 4️⃣ Inicie o JSON Server
+```bash
+npx json-server --watch db.json --port 3
+
+
+### 5️⃣ Execute a aplicação 
+```bash 
+npm run dev
+
+
+## 🤝 Contribuição 
+
+Sinta-se à vontade para contribuir! Basta:
+	1.	Fazer um fork do projeto
+	2.	Criar uma branch com sua feature (git checkout -b minha-feature)
+	3.	Comitar suas alterações (git commit -m 'Adiciona nova feature')
+	4.	Fazer push para a branch (git push origin minha-feature)
+	5.	Abrir um Pull Request
+  
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Consulte o arquivo LICENSE para mais detalhes.
+
+
+
